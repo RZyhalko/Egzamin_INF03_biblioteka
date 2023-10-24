@@ -1,0 +1,4 @@
+1. Select * from czytelnicy;
+2. Select imie, nazwisko from czytelnicy order by nazwisko ASC; 
+3. Select tytul from ksiazki inner join autorzy on ksiazki.id_autor = autorzy.id where autorzy.nazwisko = 'Sienkiewicz';
+4. Select nazwisko, count(tytul) as ile-tytulow from autorzy inner join ksiazki on ksiazki.id_autor = autorzy.id group by autorzy.nazwisko;
